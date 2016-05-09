@@ -233,3 +233,4 @@ void BInt::multiply(int n) {
         data.push_back(carry);
     }
 }
+#endif /* BINT_H_INCLUDED */
