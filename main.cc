@@ -9,9 +9,10 @@ int main()
     //BInt j(2, 74207281);
     //BInt j(2, 74200;
     //BInt j(200000000);
-    BInt j(2);
+    BInt j(10);
+    BInt k(-3);
     //j + 245;
-    //j = j + -23452;
+    //j = j + -4;
     //j.add(234567893);
     //BigInteger j(-20);
 
@@ -20,11 +21,23 @@ int main()
     //    j = j + 435434343;
     //}
 
-    for(int x = 0; x != 1000; ++x) {
-        j = j + j;
+    for(int x = 0; x != 10000; ++x) {
+        if(x % 2 == 0) {
+            j = (BInt) x + j;
+        }
+        else {
+            j = (BInt) x - j;
+        }
     }
 
+    //j = j - 100;
+
+    //j = j - k;
+
     j.print();
+    std::cout << "\n";
+    k.print();
+    std::cout << "\n";
     //std::cout << j << "\n";
     //char a = getchar();
     clock_t end = clock();
